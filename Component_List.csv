@@ -1,0 +1,13 @@
+﻿Name,Quantity,Component
+"U1",1," Arduino Uno R3"
+"MBomba",1," DC Motor"
+"BatFonte 6V12",1,"4 batteries, AA, no 1.5V Battery"
+"T1",1," nMOS Transistor (MOSFET)"
+"S1",1," Pushbutton"
+"D2",1,"Red LED"
+"D3",1,"Green LED"
+"R2, R3, R1, R4",4,"220 Ω Resistor"
+"U2",1," LCD 16 x 2"
+"Rpot1",1,"250 kΩ Potentiometer"
+"R5",1,"10 kΩ Resistor"
+"D1",1,"Yellow LED"
