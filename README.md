@@ -13,13 +13,13 @@ This project implements a 30-minute cyclic timer that switches a pump on and off
 
 ### Scientific Context
 
-- **Project Title:**  
-_Avaliação da capacidade oncoprotetora do CR35 em um modelo experimental in vivo de câncer de pulmão associado ao tabagismo_
+| Item | Detail |
+| ---- | ------ |
+| **Research title (pt-br)**  | **“Avaliação da capacidade oncoprotetora do CR35 em um modelo experimental in vivo de câncer de pulmão associado ao tabagismo”** |
+| **Research title (en)**     | **“Oncoprotective capacity of CR35 in an _in‑vivo_ cigarette‑smoke‑associated lung‑cancer model”** |
+| **Scientific goal**         | Evaluate whether the thiazolidine‑2,4‑dione derivative **CR35** can prevent lung‑tumor formation in mice exposed to cigarette smoke and urethane, and investigate whether this protection involves modulation of the inflammasome pathway. |
+| **Circuit need**            | Automation the repetitive manual dosing procedures required by researchers, improving experimental consistency and freeing researchers from manual intervention.|
 
-- **Main Objective:**  
-This research investigates the protective effects of the compound CR35 (a derivative of thiazolidine-2,4-dione) against lung cancer in mice exposed to cigarette smoke and urethane. It also explores whether this protection involves the inflammasome pathway, a protein complex linked to inflammation and carcinogenesis.
-
-The FlowCycle Pump automates the repetitive manual dosing procedures required by researchers, improving experimental consistency and freeing researchers from manual intervention.
 
 ## Interactive Circuit Diagram
 
