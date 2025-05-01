@@ -4,6 +4,23 @@
 
 ![FlowCycle Pump Prototype](images/start-view.png)
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+  - [Technical Vision](#technical-vision)
+  - [Scientific Context](#scientific-context)
+- [Interactive Circuit Diagram](#interactive-circuit-diagram)
+- [Features](#features)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+  - [Hardware Assembly](#hardware-assembly)
+  - [Uploading the Firmware](#uploading-the-firmware)
+  - [Operating Instructions](#operating-instructions)
+- [Bill of Materials](#bill-of-materials)
+- [Project Roadmap](#project-roadmap)
+- [References and Inspiration](#references-and-inspiration)
+- [License](#license)
+
 ## Project Overview
 
 The **FlowCycle Pump** is an Arduino-based controller designed to automate precise cyclic timing intervals for laboratory pump operations. It was developed as part of a scientific study at the Center for Health Sciences (CCS) at the Federal University of Pernambuco (UFPE), Brazil.
@@ -20,8 +37,11 @@ This project implements a 30-minute cyclic timer that switches a pump on and off
 | **Scientific goal**         | Evaluate whether the thiazolidine‑2,4‑dione derivative **CR35** can prevent lung‑tumor formation in mice exposed to cigarette smoke and urethane, and investigate whether this protection involves modulation of the inflammasome pathway. |
 | **Circuit need**            | Automation the repetitive manual dosing procedures required by researchers, improving experimental consistency and freeing researchers from manual intervention.|
 
-
 ## Interactive Circuit Diagram
+
+<p align="center">
+  <img src="images/FlowCycle_Pump_Demo.gif" alt="FlowCycle Pump - Operation Demo GIF" width="700">
+</p>
 
 Explore and simulate the circuit directly on Tinkercad: 
 - [Tinkercad FlowCycle Pump Project](https://www.tinkercad.com/things/bgQsxN3eTv7-flowcycle-pump)
@@ -42,7 +62,7 @@ flowcycle-pump/
 ├── src/
 │   └── FlowCyclePump.ino
 ├── images/
-│   └── Circuit prototype layout images (.png)
+│   └── Circuit prototype layout images 
 ├── docs/
 │   └── Schematic_View.pdf
 └── Component_List.csv
@@ -54,8 +74,8 @@ flowcycle-pump/
 
 Follow the detailed schematic and layout provided in:
 
-- **Schematic PDF:** `docs/Schematic_View.pdf`
-- **Breadboard Layout:** `images/circuit-off.png`
+- **Schematic PDF:** [docs/Schematic_View.pdf](https://github.com/Shellyda/flowcycle-pump/blob/f4197e52466bc491275a64fc59c0bba13ee9d35c/docs)
+- **Breadboard Layout:** [images/circuit-off.png](https://github.com/Shellyda/flowcycle-pump/blob/f4197e52466bc491275a64fc59c0bba13ee9d35c/images/circuit-off.png)
 
 ### Uploading the Firmware
 
@@ -65,7 +85,7 @@ Follow the detailed schematic and layout provided in:
 git clone https://github.com/Shellyda/flowcycle-pump.git
 ```
 
-2. Open `FlowCyclePump.ino` from the `src` folder in Arduino IDE.
+2. Open [FlowCyclePump.ino](https://github.com/Shellyda/flowcycle-pump/blob/f4197e52466bc491275a64fc59c0bba13ee9d35c/src) from the `src` folder in Arduino IDE.
 3. Upload the sketch to your Arduino UNO.
 
 ### Operating Instructions
@@ -75,7 +95,7 @@ git clone https://github.com/Shellyda/flowcycle-pump.git
 
 ## Bill of Materials
 
-See the included file `Component_List.csv` for detailed part specifications and sourcing.
+See the included file [Component_List.csv](https://github.com/Shellyda/flowcycle-pump/blob/f4197e52466bc491275a64fc59c0bba13ee9d35c/Component_List.csv) for detailed part specifications and sourcing.
 
 | Qty | Component                            | Description                 |
 |-----|--------------------------------------|-----------------------------|
