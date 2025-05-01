@@ -4,23 +4,6 @@
 
 ![FlowCycle Pump Prototype](images/start-view.png)
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-  - [Technical Vision](#technical-vision)
-  - [Scientific Context](#scientific-context)
-- [Interactive Circuit Diagram](#interactive-circuit-diagram)
-- [Features](#features)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-  - [Hardware Assembly](#hardware-assembly)
-  - [Uploading the Firmware](#uploading-the-firmware)
-  - [Operating Instructions](#operating-instructions)
-- [Bill of Materials](#bill-of-materials)
-- [Project Roadmap](#project-roadmap)
-- [References and Inspiration](#references-and-inspiration)
-- [License](#license)
-
 ## Project Overview
 
 The **FlowCycle Pump** is an Arduino-based controller designed to automate precise cyclic timing intervals for laboratory pump operations. It was developed as part of a scientific study at the Center for Health Sciences (CCS) at the Federal University of Pernambuco (UFPE), Brazil.
@@ -45,6 +28,23 @@ This project implements a 30-minute cyclic timer that switches a pump on and off
 
 Explore and simulate the circuit directly on Tinkercad: 
 - [Tinkercad FlowCycle Pump Project](https://www.tinkercad.com/things/bgQsxN3eTv7-flowcycle-pump)
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+  - [Technical Vision](#technical-vision)
+  - [Scientific Context](#scientific-context)
+- [Interactive Circuit Diagram](#interactive-circuit-diagram)
+- [Features](#features)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+  - [Hardware Assembly](#hardware-assembly)
+  - [Uploading the Firmware](#uploading-the-firmware)
+  - [Operating Instructions](#operating-instructions)
+- [Bill of Materials](#bill-of-materials)
+- [Project Roadmap](#project-roadmap)
+- [References and Inspiration](#references-and-inspiration)
+- [License](#license)
 
 ## Features
 
