@@ -9,7 +9,7 @@
 The **FlowCycle Pump** is an Arduino-based controller designed to automate precise cyclic timing intervals for laboratory pump operations. It was developed as part of a scientific study at the Center for Health Sciences (CCS) at the Federal University of Pernambuco (UFPE), Brazil.
 
 ### Technical vision
-This project implements a 30-minute cyclic timer that switches a pump on and off at predefined intervals, providing visual feedback on an LCD and LEDs. The cycle only starts—or restarts—when the user presses the button, allowing flexible pausing between runs.
+This project implements a 30-minute cyclic timer that switches a pump on and off at predefined intervals, providing visual feedback on an LCD and LEDs. The cycle only starts — or restarts — when the user presses the button, allowing flexible pausing during and between runs.
 
 ### Scientific Context
 
@@ -49,9 +49,10 @@ Explore and simulate the circuit directly on Tinkercad:
 ## Features
 
 - **Automated Timing:** Precise pump cycling intervals (default: 2 seconds ON / 30 seconds OFF for 30 minutes).
+- **Flexible Pausing:** Pause cycle during and between runs, which also will inform at what time did you pause it.
 - **One-button Operation:** Simple user interface for starting and restarting cycles.
 - **LCD Feedback:** Real-time status updates and countdown timers (MM:SS format).
-- **LED Indicators:** Visual status indication (Green LED: Pump ON, Red LED: Pump OFF, Yellow LED: End of 30 minutes cycle).
+- **LED Indicators:** Visual status indication (Green LED: Pump ON, Red LED: Pump OFF, Yellow LED: End of 30 minutes cycle and Pause state).
 - **Isolated Power Supply:** Dedicated 6×AA battery pack for the pump ensures reliable operation without interference.
 
 ## Repository Structure
