@@ -46,18 +46,6 @@ void setup() {
   handleButtonClick();
 }
 
-void loop() {
-  // START
-  runPumpCycle();
-
-  // END 
-  endPhase();
-
-  // Wait 1 minute before ask for restart process
-  delay(60000);
-  askForRestart();
-}
-
 void handleButtonClick() {
   while (digitalRead(button) == LOW) {
     // do nothing
@@ -68,6 +56,18 @@ void handleButtonClick() {
     // do nothing
   }
   delay(50);
+}
+
+void loop() {
+  // START
+  runPumpCycle();
+
+  // END 
+  endPhase();
+
+  // Wait 1 minute before ask for restart process
+  delay(60000);
+  askForRestart();
 }
 
 void endPhase() {

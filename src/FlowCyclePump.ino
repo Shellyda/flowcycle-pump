@@ -40,23 +40,34 @@ void setup() {
   lcd.print("para iniciar!");
 
   // Wait for button press to start
+  handleButtonClick();
+}
+
+void handleButtonClick() {
   while (digitalRead(button) == LOW) {
-    // do nothing before click the button
+    // do nothing
   }
+  delay(50); // debounce 50ms
+
+  while (digitalRead(button) == HIGH) {
+    // do nothing
+  }
+  delay(50);
 }
 
 void loop() {
+  // START
   runPumpCycle();
 
-  // ===== 30MIN CYCLE ENDED =====
-  startEndPhase();
+  // END
+  endPhase();
 
   // Wait 1 minute before ask for restart process
   delay(60000);
   askForRestart();
 }
 
-void startEndPhase() {
+void endPhase() {
   lcd.setCursor(0, 0);
   lcd.print(" Ciclo de 30min    ");
   lcd.setCursor(0, 1);
@@ -76,15 +87,7 @@ void askForRestart() {
   lcd.print("para reiniciar");
 
   // Wait click in button to restart 
-  while (digitalRead(button) == LOW) {
-    // do nothing
-  }
-  delay(50); // debounce 50ms
-
-  while (digitalRead(button) == HIGH) {
-    // do nothing
-  }
-  delay(50);
+  handleButtonClick();
 
   totalTime = 0;
   digitalWrite(yellowLed, LOW);
@@ -92,14 +95,38 @@ void askForRestart() {
 
 void runPumpCycle() {
   while (totalTime < replayPeriod) {
-    // ===== PUMP ON =====
     startPumpOnPhase();
     controlDisplayTimer(onTime);
 
-    // ===== PUMP OFF =====
     startPumpOffPhase();
     controlDisplayTimer(breakTime);
   }
+}
+
+void startPumpOnPhase() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Bomba LIGADA!");
+  lcd.setCursor(0, 1);
+  lcd.print("Desliga em");
+
+  digitalWrite(yellowLed, LOW);
+  digitalWrite(pump, HIGH);
+  digitalWrite(greenLed, HIGH);
+  digitalWrite(redLed, LOW);
+}
+
+void startPumpOffPhase() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Bomba DESLIGADA!");
+  lcd.setCursor(0, 1);
+  lcd.print("Liga em");
+
+  digitalWrite(yellowLed, LOW);
+  digitalWrite(pump, LOW);
+  digitalWrite(greenLed, LOW);
+  digitalWrite(redLed, HIGH);
 }
 
 void controlDisplayTimer(int cycleTime) {
@@ -132,6 +159,21 @@ void controlDisplayTimer(int cycleTime) {
       totalTime++;
     }
   }
+}
+
+void formatTime(int seconds) {
+  int displayMinutes = seconds / 60;
+  int displaySeconds = seconds % 60;
+
+  if (displayMinutes < 10) {
+    lcd.print('0');
+  }
+  lcd.print(displayMinutes);
+  lcd.print(':');
+  if (displaySeconds < 10) {
+    lcd.print('0');
+  }
+  lcd.print(displaySeconds);
 }
 
 void handlePause(int cycleTime) {
@@ -177,45 +219,4 @@ void continueBeforePhase(int cycleTime) {
   } else {
     startPumpOffPhase();
   }
-}
-
-void startPumpOnPhase() {
-  lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("Bomba LIGADA!");
-  lcd.setCursor(0, 1);
-  lcd.print("Desliga em");
-
-  digitalWrite(yellowLed, LOW);
-  digitalWrite(pump, HIGH);
-  digitalWrite(greenLed, HIGH);
-  digitalWrite(redLed, LOW);
-}
-
-void startPumpOffPhase() {
-  lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("Bomba DESLIGADA!");
-  lcd.setCursor(0, 1);
-  lcd.print("Liga em");
-
-  digitalWrite(yellowLed, LOW);
-  digitalWrite(pump, LOW);
-  digitalWrite(greenLed, LOW);
-  digitalWrite(redLed, HIGH);
-}
-
-void formatTime(int seconds) {
-  int displayMinutes = seconds / 60;
-  int displaySeconds = seconds % 60;
-
-  if (displayMinutes < 10) {
-    lcd.print('0');
-  }
-  lcd.print(displayMinutes);
-  lcd.print(':');
-  if (displaySeconds < 10) {
-    lcd.print('0');
-  }
-  lcd.print(displaySeconds);
 }
