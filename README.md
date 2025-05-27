@@ -62,6 +62,7 @@ flowcycle-pump/
 ├── README.md
 ├── src/
 │   └── FlowCyclePump.ino
+│   └── display-liquid-crystal-for-4-pins/main.ino
 ├── images/
 │   └── Circuit prototype layout images 
 ├── docs/
@@ -86,7 +87,7 @@ Follow the detailed schematic and layout provided in:
 git clone https://github.com/Shellyda/flowcycle-pump.git
 ```
 
-2. Open [FlowCyclePump.ino](https://github.com/Shellyda/flowcycle-pump/blob/f4197e52466bc491275a64fc59c0bba13ee9d35c/src) from the `src` folder in Arduino IDE.
+2. Open [FlowCyclePump.ino](https://github.com/Shellyda/flowcycle-pump/blob/f4197e52466bc491275a64fc59c0bba13ee9d35c/src) or [display-liquid-crystal-for-4-pins/main.ino](https://github.com/Shellyda/flowcycle-pump/blob/main/src/display-liquid-crystal-for-4-pins/main.ino) from the `src` folder in Arduino IDE.
 3. Upload the sketch to your Arduino UNO.
 
 ### Operating Instructions
