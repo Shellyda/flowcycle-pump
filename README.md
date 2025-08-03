@@ -113,22 +113,22 @@ See the included file [Component_List.csv](https://github.com/Shellyda/flowcycle
 | 1   | 10 kΩ Resistor                       | General assembly part       |
 
 ## Project Roadmap
-### Phase 01 - First prototype of everything on the breadboard
+### Phase 01 - First prototype of everything on the breadboard and 3D printed box model
 <p float="left">
-  <img src="images/prototype-fase01" width="45%" />
-  <img src="images/prototype-protoboard-phase01" width="45%" />
+  <img src="images/physical-prototype/prototype-phase01.png" width="45%" />
+  <img src="images/physical-prototype/prototype-box-printed-for-phase02.png" width="45%" />
 </p>
 
-### Phase 02 - Create a 3D design for the box and print it with a 3D printer
+### Phase 02 - More tests with the circuit and starting system boarding process
 <p float="left">
-  <img src="images/prototype-box-printed-for-phase02" width="45%" />
-  <img src="images/prototype-box-phase02" width="45%" />
+  <img src="images/physical-prototype/prototype-protoboard-phase01.png" width="45%" />
+  <img src="images/physical-prototype/prototype-box-phase02.JPG" width="45%" />
 </p>
 
-### Phase 03 - Embedded system
+### Phase 03 - Final embedded system
 <p float="left">
-  <img src="images/prototype-final-fase" width="45%" />
-  <img src="images/prototype-final-fase-embedded" width="45%" />
+  <img src="images/physical-prototype/prototype-final-phase-embedded.png" width="45%" />
+  <img src="images/physical-prototype/prototype-final-phase.png" width="45%" />
 </p>
 
 **Prototype completed on 07/31/2025 🥳**
