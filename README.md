@@ -113,11 +113,28 @@ See the included file [Component_List.csv](https://github.com/Shellyda/flowcycle
 | 1   | 10 kΩ Resistor                       | General assembly part       |
 
 ## Project Roadmap
+### Phase 01 - First prototype of everything on the breadboard
+<p float="left">
+  <img src="images/prototype-fase01" width="45%" />
+  <img src="images/prototype-protoboard-phase01" width="45%" />
+</p>
 
-**In Progress:**
+### Phase 02 - Create a 3D design for the box and print it with a 3D printer
+<p float="left">
+  <img src="images/prototype-box-printed-for-phase02" width="45%" />
+  <img src="images/prototype-box-phase02" width="45%" />
+</p>
+
+### Phase 03 - Embedded system
+<p float="left">
+  <img src="images/prototype-final-fase" width="45%" />
+  <img src="images/prototype-final-fase-embedded" width="45%" />
+</p>
+
+**Prototype completed on 07/31/2025 🥳**
+
+**Planned and Done:**
 - Physical assembly and validation of the prototype.
-
-**Planned:**
 - Extensive testing within experimental protocols.
 - Evaluation and reporting of system reliability and accuracy.
 
